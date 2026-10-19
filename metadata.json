@@ -1,0 +1,6 @@
+{
+  "name": "Sodbrennen Ratgeber E-Book - Offizielle Verkaufsseite",
+  "description": "Verstehen Sie die Ursachen von Sodbrennen und erfahren Sie, was Sie im Alltag tun können, um die Beschwerden zu lindern. Praktischer 30-seitiger Ratgeber mit Schritt-für-Schritt-Anleitung.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

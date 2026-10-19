@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  h1, h2, h3, .font-editorial {
+    font-family: 'Lora', Georgia, serif;
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1deg); }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.02); }
+}
+
+@keyframes drift-orb-1 {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(40px, -35px) scale(1.1); }
+  66% { transform: translate(-30px, 25px) scale(0.95); }
+}
+
+@keyframes drift-orb-2 {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(-45px, 40px) scale(1.08); }
+  66% { transform: translate(25px, -30px) scale(0.92); }
+}
+
+@keyframes drift-orb-3 {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  50% { transform: translate(35px, 45px) scale(1.12); }
+}
+
+.animate-drift-1 {
+  animation: drift-orb-1 20s ease-in-out infinite;
+}
+
+.animate-drift-2 {
+  animation: drift-orb-2 24s ease-in-out infinite;
+}
+
+.animate-drift-3 {
+  animation: drift-orb-3 28s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float-slow 5s ease-in-out infinite;
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s ease-in-out infinite;
+}
+
+/* Book 3D perspective */
+.perspective-1000 {
+  perspective: 1200px;
+}
+
+.book-shadow {
+  box-shadow: 
+    0 20px 30px -10px rgba(45, 56, 46, 0.25),
+    0 4px 6px -2px rgba(45, 56, 46, 0.05),
+    -8px 0 15px -4px rgba(0, 0, 0, 0.15);
+}
+
+/* Luxury health editorial canvas background */
+.bg-canvas-pattern {
+  background-color: #f7f2ea;
+  background-image: 
+    radial-gradient(at 15% 10%, rgba(196, 104, 73, 0.16) 0px, transparent 55%),
+    radial-gradient(at 85% 20%, rgba(69, 87, 71, 0.18) 0px, transparent 50%),
+    radial-gradient(at 30% 45%, rgba(212, 163, 115, 0.14) 0px, transparent 55%),
+    radial-gradient(at 75% 65%, rgba(82, 115, 87, 0.15) 0px, transparent 50%),
+    radial-gradient(at 20% 85%, rgba(196, 104, 73, 0.15) 0px, transparent 50%),
+    radial-gradient(at 85% 92%, rgba(69, 87, 71, 0.16) 0px, transparent 55%);
+  background-attachment: fixed;
+}
